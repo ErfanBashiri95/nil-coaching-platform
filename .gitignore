@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Zip Files
+*.zip
+
+# Logs
+*.log
+
+# Temporary
+tmp/
+temp/
+
+# Backup
+*.bak

@@ -1,0 +1,576 @@
+/* =========================
+   COURSE DETAIL PAGE
+========================= */
+
+.course-detail-page {
+    min-height: 100vh;
+    width: 100% !important;
+
+    overflow-x: hidden;
+
+    background:
+
+    radial-gradient(
+    ellipse at 15% 30%,
+    rgba(56,189,248,0.22),
+    transparent 25%
+),
+
+radial-gradient(
+    ellipse at 85% 25%,
+    rgba(99,102,241,0.22),
+    transparent 25%
+),
+
+radial-gradient(
+    ellipse at 75% 70%,
+    rgba(59,130,246,0.18),
+    transparent 35%
+),
+
+radial-gradient(
+    ellipse at 25% 70%,
+    rgba(139,92,246,0.12),
+    transparent 35%
+),
+
+radial-gradient(
+    ellipse at 12% 45%,
+    rgba(59,130,246,0.15),
+    transparent 35%
+),
+
+radial-gradient(
+    ellipse at 88% 55%,
+    rgba(168,85,247,0.12),
+    transparent 35%
+),
+
+
+    /* نوار کهکشان */
+    linear-gradient(
+        115deg,
+        transparent 25%,
+        rgba(255,255,255,0.03) 35%,
+        rgba(147,197,253,0.08) 45%,
+        rgba(255,255,255,0.10) 50%,
+        rgba(147,197,253,0.08) 55%,
+        rgba(255,255,255,0.03) 65%,
+        transparent 75%
+    ),
+
+    /* هاله راه شیری */
+    radial-gradient(
+        ellipse at 45% 40%,
+        rgba(255,255,255,0.08),
+        transparent 45%
+    ),
+
+    /* آسمان اصلی */
+linear-gradient(
+    180deg,
+    #000208 0%,
+    #010612 20%,
+    #03102a 45%,
+    #08214d 70%,
+    #0b2f70 85%,
+    #03102a 100%
+);
+
+    background-attachment: fixed;
+
+    color: #ffffff;
+}
+
+
+
+/* صفحه اصلی */
+.course-detail-page.page {
+    max-width: none !important;
+    width: 100vw !important;
+
+    margin: 0 !important;
+
+    padding: 24px 5vw !important;
+
+    box-sizing: border-box !important;
+
+    overflow-x: hidden !important;
+}
+
+/* =========================
+   GLASS CARDS
+========================= */
+
+.course-detail-page .course-card,
+.course-detail-page [style*="background: #fff"],
+.course-detail-page [style*="background: #ffffff"] {
+
+    background: rgba(255,255,255,0.12) !important;
+
+    backdrop-filter: blur(22px) !important;
+    -webkit-backdrop-filter: blur(22px) !important;
+
+    border: 1px solid rgba(255,255,255,0.28) !important;
+
+    border-radius: 24px !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 16px 40px rgba(0,0,0,0.22),
+        inset 0 1px 0 rgba(255,255,255,0.16) !important;
+}
+
+/* =========================
+   GLASS BUTTONS
+========================= */
+
+.course-detail-page .btn,
+.course-detail-page button {
+
+    background: rgba(255,255,255,0.16) !important;
+
+    border: 1px solid rgba(255,255,255,0.32) !important;
+
+    color: #ffffff !important;
+
+    border-radius: 16px !important;
+
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+
+    box-shadow:
+        0 10px 26px rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.18) !important;
+
+    transition: all .25s ease;
+}
+
+.course-detail-page .btn:hover,
+.course-detail-page button:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,0.22) !important;
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.22),
+        inset 0 1px 0 rgba(255,255,255,0.22) !important;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.course-detail-page h1,
+.course-detail-page h2,
+.course-detail-page h3,
+.course-detail-page h4 {
+    color: #ffffff !important;
+}
+
+.course-detail-page p,
+
+.course-detail-page label {
+    color: rgba(255,255,255,0.90) !important;
+}
+
+.course-detail-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+        radial-gradient(1px 1px at 5% 12%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(1px 1px at 12% 28%, rgba(255,255,255,0.8), transparent 60%),
+        radial-gradient(2px 2px at 18% 16%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(1px 1px at 24% 45%, rgba(255,255,255,0.7), transparent 60%),
+        radial-gradient(1.5px 1.5px at 31% 20%, rgba(255,255,255,0.85), transparent 60%),
+        radial-gradient(1px 1px at 37% 34%, rgba(255,255,255,0.7), transparent 60%),
+        radial-gradient(2px 2px at 45% 14%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 52% 42%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(1.5px 1.5px at 59% 26%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(1px 1px at 66% 50%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(2px 2px at 73% 18%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 81% 36%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(1.5px 1.5px at 88% 24%, rgba(255,255,255,0.85), transparent 60%),
+        radial-gradient(2px 2px at 95% 46%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 14% 70%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(2px 2px at 28% 62%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(1px 1px at 43% 76%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(1.5px 1.5px at 61% 68%, rgba(255,255,255,0.85), transparent 60%),
+        radial-gradient(2px 2px at 78% 72%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 91% 64%, rgba(255,255,255,0.75), transparent 60%),
+        radial-gradient(1px 1px at 8% 82%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(2px 2px at 16% 74%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 22% 88%, rgba(255,255,255,0.8), transparent 60%),
+        radial-gradient(1.5px 1.5px at 33% 81%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(2px 2px at 48% 84%, rgba(255,255,255,1), transparent 60%),
+        radial-gradient(1px 1px at 57% 92%, rgba(255,255,255,0.8), transparent 60%),
+        radial-gradient(2px 2px at 69% 86%, rgba(255,255,255,0.95), transparent 60%),
+        radial-gradient(1px 1px at 76% 79%, rgba(255,255,255,0.8), transparent 60%),
+        radial-gradient(1.5px 1.5px at 84% 91%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(2px 2px at 97% 82%, rgba(255,255,255,1), transparent 60%);
+
+
+
+    opacity: 0.95;
+    animation: courseStarsBlink 2.2s infinite alternate;
+}
+
+.course-detail-page::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+        radial-gradient(3px 3px at 8% 18%, white, transparent 60%),
+        radial-gradient(2px 2px at 17% 40%, white, transparent 60%),
+        radial-gradient(3px 3px at 26% 15%, white, transparent 60%),
+        radial-gradient(2px 2px at 38% 28%, white, transparent 60%),
+        radial-gradient(3px 3px at 52% 22%, white, transparent 60%),
+        radial-gradient(2px 2px at 63% 42%, white, transparent 60%),
+        radial-gradient(3px 3px at 75% 18%, white, transparent 60%),
+        radial-gradient(2px 2px at 88% 34%, white, transparent 60%),
+        radial-gradient(3px 3px at 12% 72%, white, transparent 60%),
+        radial-gradient(2px 2px at 31% 82%, white, transparent 60%),
+        radial-gradient(3px 3px at 58% 74%, white, transparent 60%),
+        radial-gradient(2px 2px at 84% 86%, white, transparent 60%);
+
+    opacity: 0.9;
+    animation: courseStarsBlink 3s infinite alternate;
+}
+
+
+.course-detail-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes courseStarsBlink {
+    0% {
+        opacity: 0.25;
+        filter: brightness(0.8);
+    }
+
+    50% {
+        opacity: 0.1;
+        filter: brightness(1.8);
+    }
+
+    100% {
+        opacity: 0.45;
+        filter: brightness(1.1);
+    }
+}
+
+.course-detail-page .header {
+    position: relative !important;
+    z-index: 999999 !important;
+}
+
+.course-detail-page .notification-panel {
+    position: absolute !important;
+    z-index: 1000000 !important;
+}
+
+.course-mobile-stars {
+    display: none;
+}
+
+@media screen and (max-device-width: 900px) {
+    .course-mobile-stars {
+        display: block !important;
+        position: fixed !important;
+        inset: 0 !important;
+        z-index: 2147483647 !important;
+        pointer-events: none !important;
+    }
+
+    .course-mobile-stars span {
+        position: fixed !important;
+        border-radius: 50% !important;
+        background: #ffffff !important;
+        box-shadow:
+            0 0 8px #ffffff,
+            0 0 16px rgba(255,255,255,0.85) !important;
+        animation: courseMobileStarBlink 1.6s infinite ease-in-out alternate !important;
+    }
+
+    .course-mobile-stars span:nth-child(1){top:7%;left:8%;width:2px;height:2px;animation-delay:.1s}
+    .course-mobile-stars span:nth-child(2){top:13%;left:22%;width:3px;height:3px;animation-delay:.6s}
+    .course-mobile-stars span:nth-child(3){top:9%;left:45%;width:2px;height:2px;animation-delay:1s}
+    .course-mobile-stars span:nth-child(4){top:18%;left:70%;width:4px;height:4px;animation-delay:.3s}
+    .course-mobile-stars span:nth-child(5){top:11%;left:90%;width:2px;height:2px;animation-delay:1.4s}
+
+    .course-mobile-stars span:nth-child(6){top:28%;left:12%;width:3px;height:3px;animation-delay:.8s}
+    .course-mobile-stars span:nth-child(7){top:35%;left:32%;width:2px;height:2px;animation-delay:.2s}
+    .course-mobile-stars span:nth-child(8){top:30%;left:55%;width:4px;height:4px;animation-delay:1.1s}
+    .course-mobile-stars span:nth-child(9){top:42%;left:78%;width:2px;height:2px;animation-delay:.5s}
+    .course-mobile-stars span:nth-child(10){top:48%;left:18%;width:3px;height:3px;animation-delay:1.3s}
+
+    .course-mobile-stars span:nth-child(11){top:58%;left:40%;width:2px;height:2px;animation-delay:.4s}
+    .course-mobile-stars span:nth-child(12){top:63%;left:66%;width:3px;height:3px;animation-delay:1s}
+    .course-mobile-stars span:nth-child(13){top:72%;left:24%;width:4px;height:4px;animation-delay:.7s}
+    .course-mobile-stars span:nth-child(14){top:80%;left:52%;width:2px;height:2px;animation-delay:1.5s}
+    .course-mobile-stars span:nth-child(15){top:88%;left:84%;width:3px;height:3px;animation-delay:.9s}
+}
+
+@keyframes courseMobileStarBlink {
+    0% {
+        opacity: .25;
+        transform: scale(.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.35);
+    }
+
+    100% {
+        opacity: .4;
+        transform: scale(.9);
+    }
+}
+/* فقط مالی را مثل قبل نگه می‌دارد */
+
+.course-detail-page .finance-original,
+.course-detail-page .finance-original * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.course-detail-page .finance-original h2,
+.course-detail-page .finance-original h3 {
+    color: #1e3a8a !important;
+}
+
+.course-detail-page .finance-original strong,
+.course-detail-page .finance-original label {
+    color: #111827 !important;
+}
+
+.course-detail-page .finance-original div {
+    color: inherit;
+}
+
+.course-detail-page .finance-original [style*="color: #1f2937"] {
+    color: #1f2937 !important;
+}
+
+.course-detail-page .finance-original [style*="color: #374151"] {
+    color: #374151 !important;
+}
+
+.course-detail-page .finance-original [style*="color: #16a34a"] {
+    color: #16a34a !important;
+}
+
+.course-detail-page .finance-original [style*="color: #dc2626"] {
+    color: #dc2626 !important;
+}
+
+.course-detail-page .finance-original [style*="color: #d97706"] {
+    color: #d97706 !important;
+}
+
+.course-detail-page .finance-original [style*="color: #7c3aed"] {
+    color: #7c3aed !important;
+}
+
+.course-detail-page .finance-original p {
+    color: inherit !important;
+}
+
+.course-detail-page .finance-original a,
+.course-detail-page .finance-original .btn,
+.course-detail-page .finance-original button {
+    color: #ffffff !important;
+}
+.finance-installment-original {
+    background: var(--finance-bg) !important;
+    border: 2px solid var(--finance-border) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    color: #374151 !important;
+}
+
+.finance-installment-original h3 {
+    color: #1e3a8a !important;
+}
+
+.finance-installment-original p {
+    color: var(--finance-text) !important;
+}
+
+.finance-installment-original strong {
+    color: #2563eb !important;
+}
+
+.finance-installment-original div {
+    color: #374151 !important;
+}
+
+.finance-installment-original label {
+    color: #111827 !important;
+}
+.finance-summary-original {
+    background: linear-gradient(135deg, #eff6ff, #ffffff) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    color: #1f2937 !important;
+}
+
+.finance-summary-original h3 {
+    color: #1e3a8a !important;
+}
+
+.finance-summary-original strong {
+    color: #111827 !important;
+}
+
+.finance-summary-original div[style*="color: #1f2937"] {
+    color: #1f2937 !important;
+}
+
+.finance-summary-original div[style*="color: #16a34a"] {
+    color: #16a34a !important;
+}
+
+.finance-summary-original div[style*="color: #dc2626"] {
+    color: #dc2626 !important;
+}
+
+.finance-summary-original div[style*="color: #d97706"] {
+    color: #d97706 !important;
+}
+.course-detail-page .finance-upload-btn {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border: none !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+/* ESSAYS ONLY - ORIGINAL STYLE */
+
+.course-detail-page .essay-original-card {
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    color: #334155 !important;
+}
+
+.course-detail-page .essay-original-card * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.course-detail-page .essay-original-card h3 {
+    color: #0f172a !important;
+}
+
+.course-detail-page .essay-original-card p {
+    color: inherit !important;
+}
+
+.course-detail-page .essay-original-card span,
+.course-detail-page .essay-original-card label,
+.course-detail-page .essay-original-card div {
+    color: inherit !important;
+}
+.course-detail-page .essay-status-text {
+    color: var(--essay-status-color) !important;
+}
+.course-detail-page .essay-save-btn {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border: none !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    box-shadow: 0 10px 20px rgba(37,99,235,0.25) !important;
+}
+.course-detail-page .essay-original-card .essay-status-green,
+.course-detail-page .essay-status-green {
+    color: #16a34a !important;
+    -webkit-text-fill-color: #16a34a !important;
+}
+
+.course-detail-page .essay-original-card .essay-status-red,
+.course-detail-page .essay-status-red {
+    color: #dc2626 !important;
+    -webkit-text-fill-color: #dc2626 !important;
+}
+
+body.nil-mobile-chat-open .header {
+    display: none !important;
+}
+
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+    .course-detail-page {
+        background-attachment: scroll !important;
+        /* overscroll-behavior-y: none !important; */
+    }
+
+    .course-detail-page::before,
+    .course-detail-page::after {
+        position: absolute !important;
+        filter: none !important;
+    }
+
+    .course-mobile-stars {
+        display: block !important;
+    }
+}
+
+/* AVATAR MODAL GLASS STYLE */
+
+.course-detail-page .avatar-modal-original {
+    color: #ffffff !important;
+}
+
+.course-detail-page .avatar-modal-original h1,
+.course-detail-page .avatar-modal-original h2,
+.course-detail-page .avatar-modal-original h3,
+.course-detail-page .avatar-modal-original h4 {
+    color: #ffffff !important;
+}
+
+.course-detail-page .avatar-modal-original p,
+.course-detail-page .avatar-modal-original span,
+.course-detail-page .avatar-modal-original label,
+.course-detail-page .avatar-modal-original div {
+    color: rgba(255,255,255,.92) !important;
+}
+
+.course-detail-page .avatar-modal-original button:not(.btn):not(.btn-secondary) {
+    background: rgba(255,255,255,.12) !important;
+    color: #ffffff !important;
+
+    border: 1px solid rgba(255,255,255,.22) !important;
+
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+}
+
+.course-detail-page .avatar-modal-original .btn {
+    background: rgba(37,99,235,.75) !important;
+    color: #ffffff !important;
+}
+
+.course-detail-page .avatar-modal-original .btn-secondary {
+    background: rgba(239,68,68,.75) !important;
+    color: #ffffff !important;
+}
+

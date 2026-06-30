@@ -1,0 +1,147 @@
+/* =========================
+   MY PROFILE PAGE
+========================= */
+
+.my-profile-page {
+    max-width: none !important;
+    width: 100vw !important;
+    height: 100vh !important;
+
+    margin: 0 !important;
+    padding: 18px 6vw !important;
+    box-sizing: border-box;
+
+    overflow: hidden !important;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../public/assets/home-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+.my-profile-page .header {
+    position: relative;
+    z-index: 5;
+}
+
+.my-profile-page .profile-back-btn {
+    position: absolute;
+    top: 28px;
+    right: 6vw;
+    z-index: 6;
+}
+
+.my-profile-page .profile-card {
+    width: 100%;
+    max-width: 430px;
+
+    margin: 30px auto 0 !important;
+    padding: 24px !important;
+
+    text-align: center;
+
+    border-radius: 30px !important;
+
+    background: rgba(255,255,255,0.10) !important;
+
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+
+    border: 1px solid rgba(255,255,255,0.35) !important;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.30),
+        0 0 30px rgba(255,255,255,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.25) !important;
+
+    color: #ffffff !important;
+}
+
+.my-profile-page .profile-card h1 {
+    margin: 0 0 10px !important;
+    font-size: 26px !important;
+    color: #ffffff !important;
+}
+
+.my-profile-page .profile-card h2 {
+    margin: 14px 0 4px !important;
+    font-size: 20px !important;
+    color: #ffffff !important;
+}
+
+.my-profile-page .profile-card p {
+    margin: 6px 0 !important;
+    color: rgba(255,255,255,0.78) !important;
+    font-size: 14px !important;
+}
+
+.my-profile-page .profile-avatar {
+    width: 115px !important;
+    height: 115px !important;
+
+    border-radius: 50%;
+    margin: 16px auto 14px !important;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.14) !important;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px !important;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 30px rgba(59,130,246,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+.my-profile-page .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.my-profile-page .btn {
+    height: 44px;
+    padding: 0 22px;
+
+    border-radius: 18px !important;
+
+    background: rgba(255,255,255,0.18) !important;
+
+    border: 1px solid rgba(255,255,255,0.55) !important;
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    color: #ffffff !important;
+
+    font-weight: 800;
+    font-size: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.20),
+        0 0 20px rgba(255,255,255,0.08),
+        0 0 30px rgba(59,130,246,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.35) !important;
+}
+
+.my-profile-page hr {
+    margin: 18px 0 !important;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.18);
+}

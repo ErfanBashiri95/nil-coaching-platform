@@ -1,0 +1,91 @@
+.course-detail-page .support-original button,
+.course-detail-page .support-original .btn {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+.course-detail-page .support-original p,
+.course-detail-page .support-original span,
+.course-detail-page .support-original label,
+.course-detail-page .support-original strong,
+.course-detail-page .support-original h3,
+.course-detail-page .support-original small,
+.course-detail-page .support-original a,
+.course-detail-page .support-original div {
+    color: initial !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+.course-detail-page .support-original input,
+.course-detail-page .support-original textarea,
+.course-detail-page .support-original select {
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+}
+
+.course-detail-page .support-original input::placeholder,
+.course-detail-page .support-original textarea::placeholder {
+    color: #64748b !important;
+}
+
+.course-detail-page .support-original button[style*="linear-gradient"] {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+/* دکمه‌های دسته‌بندی پشتیبانی */
+.course-detail-page .support-original div button {
+    color: #334155 !important;
+    -webkit-text-fill-color: #334155 !important;
+}
+
+/* دکمه‌های گرادیانتی: ثبت درخواست و ارسال پاسخ */
+.course-detail-page .support-original button[style*="linear-gradient(135deg,#16a34a"],
+.course-detail-page .support-original button[style*="linear-gradient(135deg,#2563eb"] {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* دکمه فعال دسته‌بندی */
+.course-detail-page .support-original button[style*="linear-gradient(135deg,#2563eb,#3b82f6"] {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+.course-detail-page .support-original .support-category-normal {
+    background: #ffffff !important;
+    color: #334155 !important;
+    -webkit-text-fill-color: #334155 !important;
+    border: 1px solid #bfdbfe !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.course-detail-page .support-original .support-category-active {
+    background: linear-gradient(135deg,#2563eb,#3b82f6) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border: 1px solid #bfdbfe !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.course-detail-page .support-original .support-green-btn {
+    background: linear-gradient(135deg,#16a34a,#22c55e) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.course-detail-page .support-original .support-blue-btn {
+    background: linear-gradient(135deg,#2563eb,#06b6d4) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}

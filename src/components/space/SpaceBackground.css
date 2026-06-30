@@ -1,0 +1,78 @@
+.space-bg {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0,255,180,.08), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(0,120,255,.08), transparent 30%),
+        linear-gradient(180deg,#030712,#081126,#0b1733);
+}
+
+.stars {
+    position: absolute;
+    inset: 0;
+}
+
+.stars-1 {
+    background-image:
+        radial-gradient(2px 2px at 10% 20%, white, transparent),
+        radial-gradient(2px 2px at 40% 30%, white, transparent),
+        radial-gradient(2px 2px at 70% 70%, white, transparent),
+        radial-gradient(2px 2px at 85% 15%, white, transparent),
+        radial-gradient(2px 2px at 25% 85%, white, transparent);
+}
+
+.stars-2 {
+    background-image:
+        radial-gradient(1px 1px at 15% 65%, white, transparent),
+        radial-gradient(1px 1px at 55% 15%, white, transparent),
+        radial-gradient(1px 1px at 90% 55%, white, transparent),
+        radial-gradient(1px 1px at 35% 45%, white, transparent);
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+}
+
+.orbit-1 {
+    width: 900px;
+    height: 900px;
+    top: -300px;
+    left: -300px;
+}
+
+.orbit-2 {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -150px;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet-1 {
+    width: 18px;
+    height: 18px;
+    background: #14f195;
+    top: 180px;
+    left: 420px;
+
+    box-shadow: 0 0 25px #14f195;
+}
+
+.planet-2 {
+    width: 12px;
+    height: 12px;
+    background: #4cc9f0;
+    bottom: 220px;
+    right: 280px;
+
+    box-shadow: 0 0 20px #4cc9f0;
+}

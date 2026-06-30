@@ -1,0 +1,15 @@
+.feature-card-icon-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.35));
+}
+
+@media (max-width: 768px) {
+    .feature-card-icon-img {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 14px;
+    }
+}

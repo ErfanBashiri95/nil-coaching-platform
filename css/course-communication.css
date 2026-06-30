@@ -1,0 +1,61 @@
+/* =========================
+   COMMUNICATION DESKTOP ONLY
+   موبایل را دست نمی‌زنیم
+========================= */
+
+@media screen and (min-width: 901px) {
+
+    .communication-tabs,
+    .communication-tabs *,
+    .chat-layout,
+    .chat-layout * {
+        color: #0f172a !important;
+        -webkit-text-fill-color: #0f172a !important;
+    }
+
+    .communication-tab-btn {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .communication-tab-btn * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .chat-layout input,
+    .chat-layout textarea,
+    .chat-layout select {
+        color: #0f172a !important;
+        -webkit-text-fill-color: #0f172a !important;
+    }
+
+    .chat-layout input::placeholder,
+    .chat-layout textarea::placeholder {
+        color: #64748b !important;
+        -webkit-text-fill-color: #64748b !important;
+    }
+
+    .chat-layout button {
+        color: #0f172a !important;
+        -webkit-text-fill-color: #0f172a !important;
+    }
+
+    .chat-layout button svg,
+    .chat-layout button i {
+        color: #0f172a !important;
+        fill: #0f172a !important;
+        stroke: #0f172a !important;
+    }
+
+    .chat-layout .chat-composer-send {
+        background: #0f766e !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .chat-layout .chat-composer-send * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+}

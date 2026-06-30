@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            direction: rtl;
+            margin: 0;
+            background: #f9fafb;
+        }
+
+        /* Container */
+        .page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1e3a8a);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #1e40af;
+        }
+
+        .btn-light {
+            background: white;
+            color: #1e3a8a;
+        }
+
+        /* Cards */
+        .course-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .course-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            transition: 0.2s;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section title */
+        .section-title {
+            margin-top: 50px;
+            font-size: 24px;
+        }
+
+        /* Badge */
+        .badge {
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        /* Modal */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+        }
+    </style>
+
+    <meta charset="UTF-8" />
+
+
+    <link rel="icon" type="image/png" href="./public/assets/favicon.png?v=1">
+
+
+    <title>NIL Coaching Academy</title>
+
+
+    <!-- React CDN -->
+    <script src="./assets/js/react.development.js"></script>
+    <script src="./assets/js/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="./assets/js/babel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="css/home.css?v=1">
+    <link rel="stylesheet" href="css/orbit-cards.css?v=1">
+    <link rel="stylesheet" href="css/course-detail.css?v=20">
+    <link rel="stylesheet" href="css/my-profile.css?v=1">
+    <link rel="stylesheet" href="css/course-overview.css?v=1">
+    <link rel="stylesheet" href="css/course-resources.css?v=1">
+    <link rel="stylesheet" href="css/course-logbooks.css?v=1">
+    <link rel="stylesheet" href="css/course-communication.css?v=50">
+    <link rel="stylesheet" href="css/support-section.css?v=20">
+    <link rel="stylesheet" href="css/feature-icons.css?v=1">
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div id="root">
+        <style>
+            @font-face {
+                font-family: "Inter";
+                src: url("./fonts/Inter-Regular.woff2") format("woff2");
+                font-weight: 400;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("./fonts/Inter-Medium.woff2") format("woff2");
+                font-weight: 500;
+            }
+
+            @font-face {
+                font-family: "Inter";
+                src: url("./fonts/Inter-Bold.woff2") format("woff2");
+                font-weight: 700;
+            }
+
+            @font-face {
+                font-family: "Vazirmatn";
+                src: url("./fonts/Vazirmatn-Regular.woff2") format("woff2");
+                font-weight: 400;
+            }
+
+            @font-face {
+                font-family: "Vazirmatn";
+                src: url("./fonts/Vazirmatn-Medium.woff2") format("woff2");
+                font-weight: 500;
+            }
+
+            @font-face {
+                font-family: "Vazirmatn";
+                src: url("./fonts/Vazirmatn-Bold.woff2") format("woff2");
+                font-weight: 700;
+            }
+
+            @keyframes nilSpin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <div style="
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            gap:22px;
+            background:
+              radial-gradient(circle at 20% 20%, rgba(59,130,246,.35), transparent 28%),
+              radial-gradient(circle at 80% 30%, rgba(124,58,237,.32), transparent 30%),
+              linear-gradient(135deg,#020617,#0f172a,#1e1b4b);
+            color:white;
+            overflow:hidden;
+          ">
+
+            <div style="
+          position:relative;
+          width:82px;
+          height:82px;
+          ">
+
+                <!-- حلقه چرخان -->
+                <div style="
+                  position:absolute;
+                  inset:0;
+                  border-radius:50%;
+                  padding:4px;
+                  background:conic-gradient(from 0deg,#38bdf8,#8b5cf6,#38bdf8);
+                  animation:nilSpin 1s linear infinite;
+                  -webkit-animation:nilSpin 1s linear infinite;
+                  box-shadow:0 0 35px rgba(56,189,248,.35);
+              "></div>
+
+                <!-- مرکز ثابت -->
+                <div style="
+                  position:absolute;
+                  inset:4px;
+                  border-radius:50%;
+                  background:rgba(2,6,23,.92);
+                  display:flex;
+                  align-items:center;
+                  justify-content:center;
+                  overflow:hidden;
+              ">
+
+                    <img src="public/assets/nil-logo-white.png" alt="NIL" style="
+                          width:52px;
+                          height:52px;
+                          object-fit:contain;
+                          display:block;
+                      " />
+
+                </div>
+
+            </div>
+
+
+            <div style="
+              font-family:'Inter',sans-serif;
+              font-size:22px;
+              font-weight:700;
+              letter-spacing:.5px;
+              text-shadow:0 4px 18px rgba(0,0,0,.45);
+            ">
+                NIL Coaching Academy
+            </div>
+
+            <div style="
+              font-family:'Vazirmatn',sans-serif;
+              font-size:15px;
+              font-weight:500;
+              color:rgba(255,255,255,.75);
+            ">
+                در حال بارگذاری...
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./assets/js/react.development.js"></script>
+    <script src="./assets/js/react-dom.development.js"></script>
+    <script src="./assets/js/babel.min.js"></script>
+
+    <script type="text/babel" src="src/pages/OverviewPanelPage.js"></script>
+
+    <script src="js/api.js?v=2"></script>
+    <script type="text/babel" src="js/components.js"></script>
+    <script type="text/babel" src="src/pages/CoursesPage.js"></script>
+    <script type="text/babel" src="src/components/PlanetRendererV2.js?v=1"></script>
+    <script type="text/babel" src="js/pages.js"></script>
+    <script type="text/babel" src="src/pages/ConsultPage.js"></script>
+    <script type="text/babel" src="src/pages/TeamPanelPage.js"></script>
+    <script type="text/babel" src="src/pages/PersonalProfilesPage.js"></script>
+    <script type="text/babel" src="src/pages/FinancePanelPage.js"></script>
+    <script type="text/babel" src="src/components/StudentEssaysSection.js"></script>
+    <script type="text/babel" src="src/components/EssayReportTable.js"></script>
+    <script type="text/babel" src="src/pages/EssayPanelPage.js"></script>
+
+    <script type="text/babel" src="src/components/logbooks/TrainingClientLogbook.js"></script>
+    <script type="text/babel" src="src/components/logbooks/ProfessionalClientLogbook.js"></script>
+    <script type="text/babel" src="src/components/logbooks/MentoringLogbook.js"></script>
+    <script type="text/babel" src="src/components/logbooks/MentoringFilesLogbook.js"></script>
+
+    <script type="text/babel" src="src/components/StudentLogbooksSection.js"></script>
+    <script type="text/babel" src="src/pages/LogbookPanelPage.js"></script>
+
+    <script type="text/babel" src="src/components/CommunicationSection.js?v=10"></script>
+    <script type="text/babel" src="src/pages/CommunicationPanelPage.js"></script>
+
+
+    <script type="text/babel" src="src/pages/AdminSystemPage.js"></script>
+    <script type="text/babel" src="src/pages/MyProfilePage.js"></script>
+    <script type="text/babel" src="js/StaffCourseSelectPage.js"></script>
+    <script type="text/babel" src="src/components/CourseRoadmapPreview.js"></script>
+    <script type="text/babel" src="src/components/StudentRoadmapSection.js"></script>
+    <script type="text/babel" src="src/pages/StaffRoadmapPanelPage.js"></script>
+    <script type="text/babel" src="src/pages/SessionsPanelPage.js"></script>
+    <script type="text/babel" src="src/components/StudentResourcesSection.js"></script>
+    <script type="text/babel" src="src/pages/CourseResourcesPanelPage.js"></script>
+    <script type="text/babel" src="src/components/StudentSessionsSection.js"></script>
+    <script type="text/babel" src="src/pages/CourseDetailPage.js"></script>
+    <script type="text/babel" src="js/app.js"></script>
+
+
+
+</body>
+
+</html>
