@@ -4,7 +4,7 @@
 
 A full-featured Learning Management System (LMS) designed and developed from scratch for professional coaching education.
 
-Built entirely by **Erfan Bashiri** using React, JavaScript, PHP and MySQL.
+Built entirely by **Erfan Bashiri/Ali Bashiri** using React, JavaScript, PHP and MySQL.
 
 </p>
 
@@ -278,6 +278,6 @@ Backend services, production server configuration, database schema and sensitive
 
 # 📄 License
 
-Copyright © Erfan Bashiri
+Copyright © Erfan Bashiri/Ali Bashiri
 
 All rights reserved.
