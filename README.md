@@ -246,11 +246,29 @@ Custom REST APIs developed for:
 ✔ Production Deployment
 
 
-# 👨‍💻 About the Developer
+👨‍💻 Development Team & Contributions
 
-**Erfan Bashiri/Ali Bashiri**
+NIL Coaching Platform was collaboratively developed by Ali Bashiri and Erfan Bashiri, with shared responsibility for the project and complementary technical roles.
 
-Full Stack Software Developers
+Ali Bashiri — Front-End Development & UI/UX
+
+- Front-end development and implementation of user interface components
+- UI/UX design and visual improvements
+- Responsive interface design and refinement
+- Functional testing, debugging, and troubleshooting
+- Contributions to platform maintenance and improvement
+
+Erfan Bashiri — Back-End Development & System Integration
+
+- Back-end development and REST API implementation
+- Database design and management
+- Authentication and server-side functionality
+- System architecture and integration
+- Production deployment and technical maintenance
+
+Collaboration
+
+Both developers collaborated on the planning, development, testing, and continuous improvement of the platform. The repository is hosted on Erfan Bashiri's GitHub account as part of their collaborative development work
 
 ### Responsibilities
 
