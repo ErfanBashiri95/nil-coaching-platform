@@ -248,9 +248,9 @@ Custom REST APIs developed for:
 
 # 👨‍💻 About the Developer
 
-**Erfan Bashiri**
+**Erfan Bashiri/Ali Bashiri**
 
-Full Stack Software Developer
+Full Stack Software Developers
 
 ### Responsibilities
 
