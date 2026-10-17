@@ -16,7 +16,7 @@ NIL Coaching Platform is a large-scale custom Learning Management System develop
 
 The platform combines interactive 3D navigation, course management, assessment workflows, communication, finance, educational resources and participant management into one unified system.
 
-Every part of the software—including system architecture, frontend development, backend APIs, database design, UI/UX and deployment—was designed and implemented by a single developer.
+The platform was collaboratively designed and developed by Ali Bashiri and Erfan Bashiri, with complementary responsibilities across frontend development, backend APIs, database design, UI/UX, system integration, and deployment.
 
 
 
